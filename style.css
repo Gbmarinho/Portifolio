@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather%20Sans:wght@300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+  }
+  a{
+    text-decoration: none;
+  }
+body{
+    background-color: #22212C;
+    font-family: 'Merriweather Sans';
+}
+#main-index{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+#aside-index{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+#projetos{
+    width: 62%;
+    border: 1px solid red;
+}
+#perfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 20px;
+    background-color: #302F3D;
+}
+.img-perfil{
+    width: 158px;
+    height: 158px;
+    margin: 30px 0;
+}
+.nome-perfil{
+    font-size: 26px;
+    color: #837E9F;
+    margin-bottom: 10px;
+}
+.funcao-perfil{
+   font-size: 14px;
+   margin-bottom: 40px;
+    color: #837E9F;
+}
+#links{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 20px;
+    background-color: #302F3D;
+    gap: 20px;
+    
+}
+.content-links{
+    display: flex;
+    color: #837E9F;
+    gap: 15px;
+    padding-left: 25px;
+    align-items: center;
+    font-size: 13px;
+}
+.content-links a{
+    color: #837E9F;
+    transition: 0.3s;
+}
+.content-links a:visited{
+    color: #837E9F;
+}
+.content-links a:hover{
+    opacity: 0.7;
+}
+.img-link{
+    color: #837E9F;
+}
+.link-pri{
+    padding-top: 25px;
+}
+.link-ult{
+    padding-bottom: 25px;
+}
+
+#tecnologias{
+    color: #837E9F;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 20px;
+    background-color: #302F3D;
+    align-items: center;
+}
+.content-tecno-title{
+    width: 100%;
+}
+.title-tecno{
+    font-size: 20px;
+    padding: 25px 0 15px 20px;
+    
+}
+.content-tecno{
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+.tecno{
+    background: #CB92B1;
+border-radius: 30px;
+    width: 30%;
+    min-width: 80px;
+}
+.tecno p{
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+    font-size: 11px;
+    padding: 5px;
+}
+
+#experiencias{
+    color: #837E9F;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 20px;
+    background-color: #302F3D;
+}
+
+.lista-exp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.exp-itens{
+    width: 70%;
+    gap: 2px;
+    
+}
+
+.exp-itens h2{
+    font-size: 16px;
+    padding-bottom: 5px;
+}
+.exp-itens p{
+    font-size: 12px;
+    padding-bottom: 2px;
+}
