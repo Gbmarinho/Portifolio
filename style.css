@@ -29,6 +29,9 @@ body{
 #projetos{
     width: 62%;
     border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 #perfil{
     display: flex;
@@ -48,10 +51,13 @@ border-radius: 20px;
     color: #837E9F;
     margin-bottom: 10px;
 }
-.funcao-perfil{
+.funcao-perfil, .curso-perfil{
    font-size: 14px;
-   margin-bottom: 40px;
+   padding-bottom: 5px;
     color: #837E9F;
+}
+.curso-perfil{
+    padding-bottom: 40px;
 }
 #links{
     display: flex;
@@ -80,9 +86,7 @@ border-radius: 20px;
 .content-links a:hover{
     opacity: 0.7;
 }
-.img-link{
-    color: #837E9F;
-}
+
 .link-pri{
     padding-top: 25px;
 }
@@ -142,18 +146,73 @@ border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 25px;
+    gap: 10px;
 }
 .exp-itens{
     width: 70%;
     gap: 2px;
     
 }
-
 .exp-itens h2{
     font-size: 16px;
-    padding-bottom: 5px;
+    padding-bottom: 2px;
 }
 .exp-itens p{
     font-size: 12px;
     padding-bottom: 2px;
+}
+.cargo{
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 5px;
+}
+
+
+#educacao{
+    color: #837E9F;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 20px;
+    background-color: #302F3D;
+}
+
+#title-projetos{
+    color: #837E9F;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 20px;
+    background-color: #302F3D;
+    align-items: center;
+}
+#title-projetos h2{
+    padding: 25px 0 25px 30px;
+    font-size: 22px;
+    
+}
+#title-projetos a{
+    padding-right: 30px;
+    transition: 0.3s;
+}
+#title-projetos a:visited, .redirecionamento a:visited{
+    color: #837E9F;
+}
+#title-projetos a:hover, .redirecionamento a:hover{
+    opacity: 0.7;
+}
+#pokedex{
+    color: #837E9F;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 20px;
+    background-color: #302F3D;
+}
+.redirecionamento{
+    padding: 25px 0 20px 25px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
 }
