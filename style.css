@@ -27,8 +27,7 @@ body{
     gap: 30px;
 }
 #projetos{
-    width: 62%;
-    border: 1px solid red;
+    width: 60%;
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -50,6 +49,7 @@ border-radius: 20px;
     font-size: 26px;
     color: #837E9F;
     margin-bottom: 10px;
+    word-break: break-all;
 }
 .funcao-perfil, .curso-perfil{
    font-size: 14px;
@@ -75,6 +75,8 @@ border-radius: 20px;
     padding-left: 25px;
     align-items: center;
     font-size: 13px;
+    width: 90%;
+    word-break: break-all;
 }
 .content-links a{
     color: #837E9F;
@@ -202,13 +204,45 @@ border-radius: 20px;
 #title-projetos a:hover, .redirecionamento a:hover{
     opacity: 0.7;
 }
-#pokedex{
+.segura-all-projetos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+#pokedex, #lobinho, #calc, #web{
     color: #837E9F;
     display: flex;
+    width: 46%;
     flex-direction: column;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 border-radius: 20px;
     background-color: #302F3D;
+    min-width: 230px;
+}
+
+.title-projeto{
+    font-size: 20px;
+    padding: 0 0 15px 20px;
+}
+.title-projeto a{
+    color: #837E9F;
+    transition: 0.3s;
+}
+.title-projeto a:visited{
+    color: #837E9F;
+}
+.content-projetos p{
+    padding: 0 0 15px 20px;
+    font-size: 14px;
+}
+.content-projetos h4{
+    padding: 0 0 15px 20px;
+    font-size: 14px;
+    color: #736ba6;
+}
+.title-projeto a:hover{
+    opacity: 0.7;
 }
 .redirecionamento{
     padding: 25px 0 20px 25px;
@@ -216,3 +250,170 @@ border-radius: 20px;
     align-items: center;
     gap: 18px;
 }
+.content-projetos{
+    display: flex;
+    flex-direction: column;
+
+}
+.content-projetos > a{
+    width: 100%;
+    border: none;
+    outline: none;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+.sem-margin{
+    margin-bottom: 0;
+}
+.content-projetos img, .content-projetos video{
+    width: 100%;
+    transition: 0.3s;
+}
+.content-projetos video{
+    margin-bottom: 25px;
+}
+
+@media(max-width:1050px){
+    .funcao-perfil, .curso-perfil{
+        font-size: 13px;
+        text-align: center;
+    }
+    .nome-perfil{
+        font-size: 24px;
+        text-align: center;
+    }
+}
+@media(max-width:975px){
+    .tecno{
+        width: 43%;
+    }
+}
+@media(max-width:863px){
+    .img-perfil{
+        width: 140px;
+        height: 140px;
+    }
+    .segura-all-projetos{
+        justify-content: center;
+    }
+    #pokedex, #lobinho, #calc, #web{
+        width: 80%;
+    }
+    #title-projetos h2{
+        font-size: 20px;
+    }
+    #title-projetos a{
+        font-size: 14px;
+    }
+    
+}
+@media(max-width:790px){
+    .content-links a, .nome-link{
+        font-size: 12px;
+    }
+    .content-links{
+        gap: 10px;
+        padding-left: 15px;
+    }
+    .funcao-perfil, .curso-perfil {
+        font-size: 12px;
+        text-align: center;
+    }
+    .nome-perfil{
+        font-size: 20px;
+    }
+}
+@media(max-width:640px){
+    .title-tecno{
+        font-size: 16px;
+    }
+    .exp-itens h2,.cargo{
+        font-size: 13px;
+    }
+    .exp-itens p{
+        font-size: 11px;
+        padding-bottom: 5px;
+    }
+    .content-links a, .nome-link{
+        font-size: 11px;
+    }
+    .nome-perfil{
+        font-size: 16px;
+    }
+    .funcao-perfil, .curso-perfil {
+        font-size: 11px;
+    }
+    .img-perfil {
+        width: 120px;
+        height: 120px;
+    }
+    #aside-index{
+        width: 36%;
+    }
+    .content-links{
+        gap: 7px;
+        padding-left: 10px;
+    }
+    .tecno{
+        min-width: 70px;
+        
+    }
+    .tecno p{
+        font-size: 10px;
+    }
+    #title-projetos h2{
+        font-size: 16px;
+    }
+    #title-projetos a {
+        font-size: 11px;
+    }
+    .redirecionamento a{
+        font-size: 14px;
+    }
+    .title-projeto{
+        font-size: 16px;
+        padding: 0 0 10px 15px;
+    }
+    .content-projetos p,.content-projetos h4{
+        font-size: 11.5px;
+    }
+    
+}
+@media(max-width:516px){
+    .nome-perfil {
+        font-size: 14px;
+    }
+    .img-perfil {
+        width: 105px;
+        height: 105px;
+    }
+    #pokedex, #lobinho, #calc, #web{
+        width: 15%;
+    }
+    .redirecionamento{
+        padding: 20px 0 20px 10px;
+    }
+    .tecno p{
+        font-size: 8px;
+    }
+    .tecno {
+        min-width: 60px;
+    }
+    #projetos{
+        width: 55%;
+    }
+}
+@media(max-width:450px){
+    .tecno {
+        min-width: 55px;
+    }
+}
+@media(max-width:412px){
+    .content-tecno{
+        justify-content: center;
+    }
+    .tecno {
+       width: 70%;
+    }
+}
+
